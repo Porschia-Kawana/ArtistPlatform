@@ -1,22 +1,31 @@
 .Error {
     width: 100%;
+    display: flex;
+    padding: 40px;
+    box-sizing: border-box;
+    justify-content: center;
 
     .Error__container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 40px;
         background-color: white;
         color: #000;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
 
         .Error__text__status {
             font-weight: bold;
-            font-size: larger;
+            font-size: xxx-large;
+            font-family: monospace;
         }
 
         .Error__text__message {
-            font-size: medium;
+            font-size: large;
             text-transform: uppercase;
+            font-family: monospace;
         }
     }
 }

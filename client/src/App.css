@@ -3,9 +3,14 @@
   min-width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
-  .App__bio {
+  &.App--authenticated {}
+
+  &.App--unauthenticated {
+    justify-content: space-between;
+  }
+
+  .App__content {
     font-family: monospace;
     font-size: 28px;
     margin: 40px;
@@ -16,127 +21,6 @@
     background: white;
     opacity: 0.75;
     color: black;
-  }
-
-  .App__header {
-    color: white;
-    display: flex;
-    padding: 20px;
-    box-sizing: border-box;
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-
-    .App__header__login {
-      height: 40vh;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      margin: 20px;
-      font-family: 'Luminari', fantasy;
-      font-size: 35px;
-
-      .App__header__login__image__center {
-        position: relative;
-        height: 284px;
-        width: 214px;
-        overflow: hidden;
-        bottom: 183px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px 4px rgba(118, 120, 168, 0.7);
-
-        img {
-          object-fit: fill;
-          height: 100%;
-          width: 100%;
-        }
-      }
-
-      .App__header__login__image__left {
-        position: absolute;
-        left: 40px;
-
-        img {
-          height: 353px;
-          opacity: 0.5;
-        }
-      }
-
-      .App__header__login__image__right {
-        position: absolute;
-        right: 37px;
-        transform: scaleX(-1);
-        z-index: 1;
-
-        img {
-          height: 353px;
-          opacity: 0.5;
-        }
-      }
-
-      .App__header__login__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .App__header__login__button {
-        background: radial-gradient(circle at 10% 20%, rgb(253, 203, 50) 0%, rgb(244, 56, 98) 100.2%);
-        box-shadow: 0px 0px 5px 4px rgba(118, 120, 168, 0.7);
-        height: auto;
-        width: 165px;
-        padding: 10px 40px;
-        border-radius: 4px;
-        font-size: large;
-        margin-left: auto;
-        border: transparent;
-        text-transform: uppercase;
-        color: white;
-        z-index: 9;
-      }
-    }
-  }
-
-  .App__header__logout {
-    height: 50px;
-    width: 100%;
-    margin: 0 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .App__header__logout__title {
-      font-size: x-large;
-      font-weight: bold;
-      color: white;
-      font-family: fantasy;
-      margin-top: 6px;
-    }
-
-    .App__header__logout__button__group {
-      display: flex;
-      gap: 20px;
-    }
-
-    .App__header__logout__button__border {
-      background: radial-gradient(circle at 10% 20%, rgb(253, 203, 50) 0%, rgb(244, 56, 98) 100.2%);
-      padding: 3px;
-      border-radius: 4px;
-      width: fit-content;
-
-      .App__header__logout__button {
-        background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-        height: auto;
-        padding: 10px 40px;
-        border-radius: 4px;
-        font-size: medium;
-        margin-left: auto;
-        border: transparent;
-        text-transform: uppercase;
-        color: white;
-      }
-    }
   }
 
   .App__footer {
