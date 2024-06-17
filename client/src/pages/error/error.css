@@ -1,0 +1,22 @@
+.Error {
+    width: 100%;
+
+    .Error__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        background-color: white;
+        color: #000;
+
+        .Error__text__status {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .Error__text__message {
+            font-size: medium;
+            text-transform: uppercase;
+        }
+    }
+}
